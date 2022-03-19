@@ -1,0 +1,44 @@
+ *{
+	font-family: 'Sen', sans-serif;
+	font-weight: 100;
+}
+
+.container{
+	padding: 20px;
+	margin: 30px;
+	filter: contrast(20);
+	background: white;
+	
+}
+
+body{
+	scroll-behavior: smooth;
+	user-select: none;
+}
+
+.caja{display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 40px;
+	border-radius: 50%;
+	background: red;
+	filter: blur(10px)
+}
+
+#txtp{
+	background: blue;
+}
+
+.caja:first-child{
+	animation: cajas 1s alternate infinite;
+}
+
+@keyframes cajas{
+	0%{
+		transform: translate(0);
+	}
+
+	100%{
+		transform: translateX(90%);
+	}
+}
